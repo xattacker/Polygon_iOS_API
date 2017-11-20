@@ -1,7 +1,7 @@
-# Polygon_iOS_API
+﻿# Polygon_iOS_API
 a iOS swift Polygon UI View component 
 
-���Ѧb iOS app �۩w�q�h�䫬�϶��ϼ˧e�{:<br>
+提供在 iOS app 自定義多邊型區塊圖樣呈現:<br>
 ![avatar](/rm_res/cut1.png)<br><br>
-�i�z�L�{���X�զ��϶��άO�z�Ljson�ɶפJ�϶���T�e�{�e��<br>
-�ô����I���ƥ�I�s�ʧ@
+可透過程式碼組成區塊或是透過json檔匯入區塊資訊呈現畫面<br>
+並提供點擊事件呼叫動作
