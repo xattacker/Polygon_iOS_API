@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		651E4A201FC32CDD0029C990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A1F1FC32CDD0029C990 /* AppDelegate.swift */; };
+		651E4A221FC32CDD0029C990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A211FC32CDD0029C990 /* ViewController.swift */; };
+		651E4A251FC32CDD0029C990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A231FC32CDD0029C990 /* Main.storyboard */; };
+		651E4A271FC32CDD0029C990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A261FC32CDD0029C990 /* Assets.xcassets */; };
+		651E4A2A1FC32CDD0029C990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A281FC32CDD0029C990 /* LaunchScreen.storyboard */; };
+		651E4A4E1FC32D600029C990 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A361FC32D600029C990 /* CustomDateFormatTransform.swift */; };
+		651E4A4F1FC32D600029C990 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A371FC32D600029C990 /* DataTransform.swift */; };
+		651E4A501FC32D600029C990 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A381FC32D600029C990 /* DateFormatterTransform.swift */; };
+		651E4A511FC32D600029C990 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A391FC32D600029C990 /* DateTransform.swift */; };
+		651E4A521FC32D600029C990 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3A1FC32D600029C990 /* DictionaryTransform.swift */; };
+		651E4A531FC32D600029C990 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3B1FC32D600029C990 /* EnumOperators.swift */; };
+		651E4A541FC32D600029C990 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3C1FC32D600029C990 /* EnumTransform.swift */; };
+		651E4A551FC32D600029C990 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3D1FC32D600029C990 /* FromJSON.swift */; };
+		651E4A561FC32D600029C990 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3E1FC32D600029C990 /* HexColorTransform.swift */; };
+		651E4A571FC32D600029C990 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3F1FC32D600029C990 /* ImmutableMappable.swift */; };
+		651E4A581FC32D600029C990 /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A401FC32D600029C990 /* IntegerOperators.swift */; };
+		651E4A591FC32D600029C990 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A411FC32D600029C990 /* ISO8601DateTransform.swift */; };
+		651E4A5A1FC32D600029C990 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A421FC32D600029C990 /* Map.swift */; };
+		651E4A5B1FC32D600029C990 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A431FC32D600029C990 /* MapError.swift */; };
+		651E4A5C1FC32D600029C990 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A441FC32D600029C990 /* Mappable.swift */; };
+		651E4A5D1FC32D600029C990 /* MappableObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A451FC32D600029C990 /* MappableObj.swift */; };
+		651E4A5E1FC32D600029C990 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A461FC32D600029C990 /* Mapper.swift */; };
+		651E4A5F1FC32D600029C990 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A471FC32D600029C990 /* NSDecimalNumberTransform.swift */; };
+		651E4A601FC32D600029C990 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A481FC32D600029C990 /* Operators.swift */; };
+		651E4A611FC32D600029C990 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A491FC32D600029C990 /* ToJSON.swift */; };
+		651E4A621FC32D600029C990 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A4A1FC32D600029C990 /* TransformOf.swift */; };
+		651E4A631FC32D600029C990 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A4B1FC32D600029C990 /* TransformOperators.swift */; };
+		651E4A641FC32D600029C990 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A4C1FC32D600029C990 /* TransformType.swift */; };
+		651E4A651FC32D600029C990 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A4D1FC32D600029C990 /* URLTransform.swift */; };
+		651E4A6D1FC32D6A0029C990 /* PolygonColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A671FC32D6A0029C990 /* PolygonColorTransform.swift */; };
+		651E4A6E1FC32D6A0029C990 /* PolygonMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A681FC32D6A0029C990 /* PolygonMap.swift */; };
+		651E4A6F1FC32D6A0029C990 /* PolygonRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A691FC32D6A0029C990 /* PolygonRegion.swift */; };
+		651E4A701FC32D6A0029C990 /* RegionMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A6A1FC32D6A0029C990 /* RegionMark.swift */; };
+		651E4A711FC32D6A0029C990 /* RegionPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A6B1FC32D6A0029C990 /* RegionPoint.swift */; };
+		651E4A721FC32D6A0029C990 /* UIPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A6C1FC32D6A0029C990 /* UIPolygonView.swift */; };
+		651E4A7F1FC32E880029C990 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A771FC32E880029C990 /* UIColor.swift */; };
+		651E4A851FC32F470029C990 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A841FC32F470029C990 /* String.swift */; };
+		651E4A871FC330070029C990 /* region.json in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A861FC330070029C990 /* region.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		651E4A1C1FC32CDD0029C990 /* PolygonAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolygonAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		651E4A1F1FC32CDD0029C990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		651E4A211FC32CDD0029C990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		651E4A241FC32CDD0029C990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		651E4A261FC32CDD0029C990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		651E4A291FC32CDD0029C990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		651E4A2B1FC32CDD0029C990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651E4A361FC32D600029C990 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		651E4A371FC32D600029C990 /* DataTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransform.swift; sourceTree = "<group>"; };
+		651E4A381FC32D600029C990 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
+		651E4A391FC32D600029C990 /* DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
+		651E4A3A1FC32D600029C990 /* DictionaryTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTransform.swift; sourceTree = "<group>"; };
+		651E4A3B1FC32D600029C990 /* EnumOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumOperators.swift; sourceTree = "<group>"; };
+		651E4A3C1FC32D600029C990 /* EnumTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTransform.swift; sourceTree = "<group>"; };
+		651E4A3D1FC32D600029C990 /* FromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
+		651E4A3E1FC32D600029C990 /* HexColorTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorTransform.swift; sourceTree = "<group>"; };
+		651E4A3F1FC32D600029C990 /* ImmutableMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImmutableMappable.swift; sourceTree = "<group>"; };
+		651E4A401FC32D600029C990 /* IntegerOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerOperators.swift; sourceTree = "<group>"; };
+		651E4A411FC32D600029C990 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		651E4A421FC32D600029C990 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		651E4A431FC32D600029C990 /* MapError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapError.swift; sourceTree = "<group>"; };
+		651E4A441FC32D600029C990 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		651E4A451FC32D600029C990 /* MappableObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappableObj.swift; sourceTree = "<group>"; };
+		651E4A461FC32D600029C990 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		651E4A471FC32D600029C990 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		651E4A481FC32D600029C990 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		651E4A491FC32D600029C990 /* ToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
+		651E4A4A1FC32D600029C990 /* TransformOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
+		651E4A4B1FC32D600029C990 /* TransformOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOperators.swift; sourceTree = "<group>"; };
+		651E4A4C1FC32D600029C990 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
+		651E4A4D1FC32D600029C990 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		651E4A671FC32D6A0029C990 /* PolygonColorTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonColorTransform.swift; sourceTree = "<group>"; };
+		651E4A681FC32D6A0029C990 /* PolygonMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonMap.swift; sourceTree = "<group>"; };
+		651E4A691FC32D6A0029C990 /* PolygonRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonRegion.swift; sourceTree = "<group>"; };
+		651E4A6A1FC32D6A0029C990 /* RegionMark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionMark.swift; sourceTree = "<group>"; };
+		651E4A6B1FC32D6A0029C990 /* RegionPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionPoint.swift; sourceTree = "<group>"; };
+		651E4A6C1FC32D6A0029C990 /* UIPolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPolygonView.swift; sourceTree = "<group>"; };
+		651E4A771FC32E880029C990 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		651E4A841FC32F470029C990 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		651E4A861FC330070029C990 /* region.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = region.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		651E4A191FC32CDD0029C990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		651E4A131FC32CDD0029C990 = {
+			isa = PBXGroup;
+			children = (
+				651E4A1E1FC32CDD0029C990 /* PolygonAPI */,
+				651E4A1D1FC32CDD0029C990 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		651E4A1D1FC32CDD0029C990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				651E4A1C1FC32CDD0029C990 /* PolygonAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		651E4A1E1FC32CDD0029C990 /* PolygonAPI */ = {
+			isa = PBXGroup;
+			children = (
+				651E4A731FC32E880029C990 /* Extension */,
+				651E4A351FC32D600029C990 /* ObjectMapper */,
+				651E4A661FC32D6A0029C990 /* Polygon */,
+				651E4A1F1FC32CDD0029C990 /* AppDelegate.swift */,
+				651E4A211FC32CDD0029C990 /* ViewController.swift */,
+				651E4A861FC330070029C990 /* region.json */,
+				651E4A231FC32CDD0029C990 /* Main.storyboard */,
+				651E4A261FC32CDD0029C990 /* Assets.xcassets */,
+				651E4A281FC32CDD0029C990 /* LaunchScreen.storyboard */,
+				651E4A2B1FC32CDD0029C990 /* Info.plist */,
+			);
+			path = PolygonAPI;
+			sourceTree = "<group>";
+		};
+		651E4A351FC32D600029C990 /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				651E4A361FC32D600029C990 /* CustomDateFormatTransform.swift */,
+				651E4A371FC32D600029C990 /* DataTransform.swift */,
+				651E4A381FC32D600029C990 /* DateFormatterTransform.swift */,
+				651E4A391FC32D600029C990 /* DateTransform.swift */,
+				651E4A3A1FC32D600029C990 /* DictionaryTransform.swift */,
+				651E4A3B1FC32D600029C990 /* EnumOperators.swift */,
+				651E4A3C1FC32D600029C990 /* EnumTransform.swift */,
+				651E4A3D1FC32D600029C990 /* FromJSON.swift */,
+				651E4A3E1FC32D600029C990 /* HexColorTransform.swift */,
+				651E4A3F1FC32D600029C990 /* ImmutableMappable.swift */,
+				651E4A401FC32D600029C990 /* IntegerOperators.swift */,
+				651E4A411FC32D600029C990 /* ISO8601DateTransform.swift */,
+				651E4A421FC32D600029C990 /* Map.swift */,
+				651E4A431FC32D600029C990 /* MapError.swift */,
+				651E4A441FC32D600029C990 /* Mappable.swift */,
+				651E4A451FC32D600029C990 /* MappableObj.swift */,
+				651E4A461FC32D600029C990 /* Mapper.swift */,
+				651E4A471FC32D600029C990 /* NSDecimalNumberTransform.swift */,
+				651E4A481FC32D600029C990 /* Operators.swift */,
+				651E4A491FC32D600029C990 /* ToJSON.swift */,
+				651E4A4A1FC32D600029C990 /* TransformOf.swift */,
+				651E4A4B1FC32D600029C990 /* TransformOperators.swift */,
+				651E4A4C1FC32D600029C990 /* TransformType.swift */,
+				651E4A4D1FC32D600029C990 /* URLTransform.swift */,
+			);
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		651E4A661FC32D6A0029C990 /* Polygon */ = {
+			isa = PBXGroup;
+			children = (
+				651E4A671FC32D6A0029C990 /* PolygonColorTransform.swift */,
+				651E4A681FC32D6A0029C990 /* PolygonMap.swift */,
+				651E4A691FC32D6A0029C990 /* PolygonRegion.swift */,
+				651E4A6A1FC32D6A0029C990 /* RegionMark.swift */,
+				651E4A6B1FC32D6A0029C990 /* RegionPoint.swift */,
+				651E4A6C1FC32D6A0029C990 /* UIPolygonView.swift */,
+			);
+			path = Polygon;
+			sourceTree = "<group>";
+		};
+		651E4A731FC32E880029C990 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				651E4A841FC32F470029C990 /* String.swift */,
+				651E4A771FC32E880029C990 /* UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		651E4A1B1FC32CDD0029C990 /* PolygonAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651E4A2E1FC32CDD0029C990 /* Build configuration list for PBXNativeTarget "PolygonAPI" */;
+			buildPhases = (
+				651E4A181FC32CDD0029C990 /* Sources */,
+				651E4A191FC32CDD0029C990 /* Frameworks */,
+				651E4A1A1FC32CDD0029C990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PolygonAPI;
+			productName = PolygonAPI;
+			productReference = 651E4A1C1FC32CDD0029C990 /* PolygonAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		651E4A141FC32CDD0029C990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = xattacker;
+				TargetAttributes = {
+					651E4A1B1FC32CDD0029C990 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 651E4A171FC32CDD0029C990 /* Build configuration list for PBXProject "PolygonAPI" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 651E4A131FC32CDD0029C990;
+			productRefGroup = 651E4A1D1FC32CDD0029C990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				651E4A1B1FC32CDD0029C990 /* PolygonAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		651E4A1A1FC32CDD0029C990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651E4A2A1FC32CDD0029C990 /* LaunchScreen.storyboard in Resources */,
+				651E4A271FC32CDD0029C990 /* Assets.xcassets in Resources */,
+				651E4A251FC32CDD0029C990 /* Main.storyboard in Resources */,
+				651E4A871FC330070029C990 /* region.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		651E4A181FC32CDD0029C990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651E4A571FC32D600029C990 /* ImmutableMappable.swift in Sources */,
+				651E4A5B1FC32D600029C990 /* MapError.swift in Sources */,
+				651E4A6F1FC32D6A0029C990 /* PolygonRegion.swift in Sources */,
+				651E4A601FC32D600029C990 /* Operators.swift in Sources */,
+				651E4A591FC32D600029C990 /* ISO8601DateTransform.swift in Sources */,
+				651E4A4F1FC32D600029C990 /* DataTransform.swift in Sources */,
+				651E4A521FC32D600029C990 /* DictionaryTransform.swift in Sources */,
+				651E4A711FC32D6A0029C990 /* RegionPoint.swift in Sources */,
+				651E4A6D1FC32D6A0029C990 /* PolygonColorTransform.swift in Sources */,
+				651E4A531FC32D600029C990 /* EnumOperators.swift in Sources */,
+				651E4A4E1FC32D600029C990 /* CustomDateFormatTransform.swift in Sources */,
+				651E4A5D1FC32D600029C990 /* MappableObj.swift in Sources */,
+				651E4A7F1FC32E880029C990 /* UIColor.swift in Sources */,
+				651E4A511FC32D600029C990 /* DateTransform.swift in Sources */,
+				651E4A5C1FC32D600029C990 /* Mappable.swift in Sources */,
+				651E4A561FC32D600029C990 /* HexColorTransform.swift in Sources */,
+				651E4A721FC32D6A0029C990 /* UIPolygonView.swift in Sources */,
+				651E4A651FC32D600029C990 /* URLTransform.swift in Sources */,
+				651E4A621FC32D600029C990 /* TransformOf.swift in Sources */,
+				651E4A551FC32D600029C990 /* FromJSON.swift in Sources */,
+				651E4A221FC32CDD0029C990 /* ViewController.swift in Sources */,
+				651E4A701FC32D6A0029C990 /* RegionMark.swift in Sources */,
+				651E4A611FC32D600029C990 /* ToJSON.swift in Sources */,
+				651E4A5A1FC32D600029C990 /* Map.swift in Sources */,
+				651E4A5F1FC32D600029C990 /* NSDecimalNumberTransform.swift in Sources */,
+				651E4A541FC32D600029C990 /* EnumTransform.swift in Sources */,
+				651E4A581FC32D600029C990 /* IntegerOperators.swift in Sources */,
+				651E4A641FC32D600029C990 /* TransformType.swift in Sources */,
+				651E4A201FC32CDD0029C990 /* AppDelegate.swift in Sources */,
+				651E4A501FC32D600029C990 /* DateFormatterTransform.swift in Sources */,
+				651E4A6E1FC32D6A0029C990 /* PolygonMap.swift in Sources */,
+				651E4A851FC32F470029C990 /* String.swift in Sources */,
+				651E4A631FC32D600029C990 /* TransformOperators.swift in Sources */,
+				651E4A5E1FC32D600029C990 /* Mapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		651E4A231FC32CDD0029C990 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				651E4A241FC32CDD0029C990 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		651E4A281FC32CDD0029C990 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				651E4A291FC32CDD0029C990 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		651E4A2C1FC32CDD0029C990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		651E4A2D1FC32CDD0029C990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		651E4A2F1FC32CDD0029C990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PolygonAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xattacker.PolygonAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		651E4A301FC32CDD0029C990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PolygonAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xattacker.PolygonAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		651E4A171FC32CDD0029C990 /* Build configuration list for PBXProject "PolygonAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651E4A2C1FC32CDD0029C990 /* Debug */,
+				651E4A2D1FC32CDD0029C990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651E4A2E1FC32CDD0029C990 /* Build configuration list for PBXNativeTarget "PolygonAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651E4A2F1FC32CDD0029C990 /* Debug */,
+				651E4A301FC32CDD0029C990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 651E4A141FC32CDD0029C990 /* Project object */;
+}
