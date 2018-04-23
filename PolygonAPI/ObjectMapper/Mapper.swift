@@ -161,7 +161,7 @@ public final class Mapper<N: BaseMappable> {
 	/// Maps an array of JSON dictionary to an array of Mappable objects
 	public func mapArray(JSONArray: [[String: Any]]) -> [N] {
 		// map every element in JSON array to type N
-		let result = JSONArray.flatMap(map)
+        let result = JSONArray.compactMap(map)
 		return result
 	}
 	
@@ -281,6 +281,44 @@ public final class Mapper<N: BaseMappable> {
 }
 
 extension Mapper {
+	// MARK: Functions that create model from JSON file
+
+	/// JSON file to Mappable object
+	/// - parameter JSONfile: Filename
+	/// - Returns: Mappable object
+	public func map(JSONfile: String) -> N? {
+		if let path = Bundle.main.path(forResource: JSONfile, ofType: nil) {
+			do {
+				let JSONString = try String(contentsOfFile: path)
+				do {
+					return self.map(JSONString: JSONString)
+				}
+			} catch {
+				return nil
+			}
+		}
+		return nil
+	}
+
+	/// JSON file to Mappable object array
+	/// - parameter JSONfile: Filename
+	/// - Returns: Mappable object array
+	public func mapArray(JSONfile: String) -> [N]? {
+		if let path = Bundle.main.path(forResource: JSONfile, ofType: nil) {
+			do {
+				let JSONString = try String(contentsOfFile: path)
+				do {
+					return self.mapArray(JSONString: JSONString)
+				}
+			} catch {
+				return nil
+			}
+		}
+		return nil
+	}
+}
+
+extension Mapper {
     
 	// MARK: Functions that create JSON from objects	
 	
@@ -389,7 +427,7 @@ extension Mapper where N: Hashable {
 	/// Maps an Set of JSON dictionary to an array of Mappable objects
 	public func mapSet(JSONArray: [[String: Any]]) -> Set<N> {
 		// map every element in JSON array to type N
-		return Set(JSONArray.flatMap(map))
+        return Set(JSONArray.compactMap(map))
 	}
 
 	///Maps a Set of Objects to a Set of JSON dictionaries [[String : Any]]
