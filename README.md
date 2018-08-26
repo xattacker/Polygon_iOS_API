@@ -6,3 +6,5 @@ a iOS swift Polygon UI View component
 可透過程式碼組成區塊或是透過json檔匯入區塊資訊呈現畫面<br>
 (json剖析使用 ObjectMapper 模組處理 https://github.com/Hearst-DD/ObjectMapper)<br>
 並提供點擊事件呼叫動作
+
+depends on <a href="https://github.com/Hearst-DD/ObjectMapper">ObjectMapper</a>
