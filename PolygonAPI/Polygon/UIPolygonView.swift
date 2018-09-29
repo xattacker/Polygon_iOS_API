@@ -312,7 +312,7 @@ extension UIPolygonView
 }
 
 
-extension UIPolygonView
+internal extension UIPolygonView
 {
     private func drawLine(
     _ region: PolygonRegion,
@@ -348,9 +348,9 @@ extension UIPolygonView
     private func drawString(_ str: String, rect: CGRect, font: UIFont, color: UIColor)
     {
         let attrs = [
-                    NSAttributedStringKey.font: font,
-                    NSAttributedStringKey.foregroundColor: color
-                    ] as [NSAttributedStringKey : Any]
+                    NSAttributedString.Key.font: font,
+                    NSAttributedString.Key.foregroundColor: color
+                    ] as [NSAttributedString.Key : Any]
         
         str.draw(
             with: rect,
