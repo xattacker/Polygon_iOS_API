@@ -51,16 +51,9 @@ extension String
     Returns char at an index
     Example: string[0] == "a"
     */
-    subscript (index: Int) -> Character
+    subscript (idx: Int) -> Character
     {
-        //support negative indices
-        var i = index
-        if i < 0
-        {
-            i = self.length - abs(index)
-        }
-
-        return self[index]
+        return self[index(startIndex, offsetBy: idx)]
     }
     
     /**
@@ -121,7 +114,7 @@ extension String
         
         if let i = index
         {
-            result = self[i]
+            result = String(self[i])
         }
         
         return result
@@ -313,7 +306,7 @@ extension String
         
         for i in (0 ..< self.length).reversed()
         {
-            let char : String = self[i]
+            let char = String(self[i])
             reversed += char
         }
         

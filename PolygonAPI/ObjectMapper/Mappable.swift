@@ -46,7 +46,7 @@ public protocol StaticMappable: BaseMappable {
 	static func objectForMapping(map: Map) -> BaseMappable?
 }
 
-public extension BaseMappable {
+extension BaseMappable {
 	
 	/// Initializes object from a JSON String
 	public init?(JSONString: String, context: MapContext? = nil) {
@@ -77,7 +77,7 @@ public extension BaseMappable {
 	}
 }
 
-public extension Array where Element: BaseMappable {
+extension Array where Element: BaseMappable {
 	
 	/// Initialize Array from a JSON String
 	public init?(JSONString: String, context: MapContext? = nil) {
@@ -105,7 +105,7 @@ public extension Array where Element: BaseMappable {
 	}
 }
 
-public extension Set where Element: BaseMappable {
+extension Set where Element: BaseMappable {
 	
 	/// Initializes a set from a JSON String
 	public init?(JSONString: String, context: MapContext? = nil) {

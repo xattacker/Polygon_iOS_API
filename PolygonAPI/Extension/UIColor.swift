@@ -9,7 +9,7 @@
 import UIKit
 
 
-public extension UIColor
+extension UIColor
 {
     public convenience init(decimalRed: Int, green: Int, blue: Int, alpha: CGFloat = 1)
     {

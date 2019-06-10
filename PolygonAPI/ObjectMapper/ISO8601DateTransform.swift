@@ -28,7 +28,7 @@
 
 import Foundation
 
-public extension DateFormatter {
+extension DateFormatter {
 	public convenience init(withFormat format : String, locale : String) {
 		self.init()
 		self.locale = Locale(identifier: locale)
