@@ -9,7 +9,7 @@
 import UIKit
 
 
-public class PolygonMap: MappableObj
+public final class PolygonMap: MappableObj
 {
     public var width: Float = 0
     public var height: Float = 0

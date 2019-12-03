@@ -16,7 +16,7 @@ public protocol UIPolygonViewDelegate: class
 }
 
 
-@IBDesignable public class UIPolygonView: UIView
+@IBDesignable public final class UIPolygonView: UIView
 {
     @IBInspectable public var borderColor: UIColor = UIColor.darkGray
     @IBInspectable public var highlightColor: UIColor = UIColor.darkGray.withAlphaComponent(0.5)

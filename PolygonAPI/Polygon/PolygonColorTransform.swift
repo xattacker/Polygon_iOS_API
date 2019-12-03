@@ -9,7 +9,7 @@
 import UIKit
 
 
-public class PolygonColorTransform: TransformType
+internal final class PolygonColorTransform: TransformType
 {
     public typealias Object = UIColor
     public typealias JSON = String

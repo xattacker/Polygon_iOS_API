@@ -9,7 +9,7 @@
 import UIKit
 
 
-public class RegionPoint: MappableObj
+public final class RegionPoint: MappableObj
 {
     public var x: Float = 0
     public var y: Float = 0

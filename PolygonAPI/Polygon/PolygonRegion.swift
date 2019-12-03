@@ -9,7 +9,7 @@
 import UIKit
 
 
-public class PolygonRegion: MappableObj
+public final class PolygonRegion: MappableObj
 {
     public var regionId: String?
     public var regionColor: UIColor = UIColor.clear
@@ -142,7 +142,7 @@ public class PolygonRegion: MappableObj
 }
 
 
-public class RegionTitleInfo: MappableObj
+public final class RegionTitleInfo: MappableObj
 {
     public var title: String?
     public var position: RegionPoint = RegionPoint()

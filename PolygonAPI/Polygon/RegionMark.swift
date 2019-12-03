@@ -12,7 +12,7 @@ import UIKit
 public let REGION_MARK_RADIUS = CGFloat(12.5)
 
 
-public class RegionMark: MappableObj
+public final class RegionMark: MappableObj
 {
     public var markId: String?
     public var title: String?
