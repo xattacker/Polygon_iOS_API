@@ -65,5 +65,4 @@ region.addPoint(CGPoint(x: 254, y: 30))
 region.addPoint(CGPoint(x: 192, y: 49))
 
 self.polygonView.addRegion(region)
-
 ```
