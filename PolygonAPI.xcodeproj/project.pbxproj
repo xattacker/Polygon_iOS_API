@@ -12,39 +12,17 @@
 		651E4A251FC32CDD0029C990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A231FC32CDD0029C990 /* Main.storyboard */; };
 		651E4A271FC32CDD0029C990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A261FC32CDD0029C990 /* Assets.xcassets */; };
 		651E4A2A1FC32CDD0029C990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A281FC32CDD0029C990 /* LaunchScreen.storyboard */; };
-		651E4A4E1FC32D600029C990 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A361FC32D600029C990 /* CustomDateFormatTransform.swift */; };
-		651E4A4F1FC32D600029C990 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A371FC32D600029C990 /* DataTransform.swift */; };
-		651E4A501FC32D600029C990 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A381FC32D600029C990 /* DateFormatterTransform.swift */; };
-		651E4A511FC32D600029C990 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A391FC32D600029C990 /* DateTransform.swift */; };
-		651E4A521FC32D600029C990 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3A1FC32D600029C990 /* DictionaryTransform.swift */; };
-		651E4A531FC32D600029C990 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3B1FC32D600029C990 /* EnumOperators.swift */; };
-		651E4A541FC32D600029C990 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3C1FC32D600029C990 /* EnumTransform.swift */; };
-		651E4A551FC32D600029C990 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3D1FC32D600029C990 /* FromJSON.swift */; };
-		651E4A561FC32D600029C990 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3E1FC32D600029C990 /* HexColorTransform.swift */; };
-		651E4A571FC32D600029C990 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A3F1FC32D600029C990 /* ImmutableMappable.swift */; };
-		651E4A581FC32D600029C990 /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A401FC32D600029C990 /* IntegerOperators.swift */; };
-		651E4A591FC32D600029C990 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A411FC32D600029C990 /* ISO8601DateTransform.swift */; };
-		651E4A5A1FC32D600029C990 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A421FC32D600029C990 /* Map.swift */; };
-		651E4A5B1FC32D600029C990 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A431FC32D600029C990 /* MapError.swift */; };
-		651E4A5C1FC32D600029C990 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A441FC32D600029C990 /* Mappable.swift */; };
-		651E4A5D1FC32D600029C990 /* MappableObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A451FC32D600029C990 /* MappableObj.swift */; };
-		651E4A5E1FC32D600029C990 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A461FC32D600029C990 /* Mapper.swift */; };
-		651E4A5F1FC32D600029C990 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A471FC32D600029C990 /* NSDecimalNumberTransform.swift */; };
-		651E4A601FC32D600029C990 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A481FC32D600029C990 /* Operators.swift */; };
-		651E4A611FC32D600029C990 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A491FC32D600029C990 /* ToJSON.swift */; };
-		651E4A621FC32D600029C990 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A4A1FC32D600029C990 /* TransformOf.swift */; };
-		651E4A631FC32D600029C990 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A4B1FC32D600029C990 /* TransformOperators.swift */; };
-		651E4A641FC32D600029C990 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A4C1FC32D600029C990 /* TransformType.swift */; };
-		651E4A651FC32D600029C990 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A4D1FC32D600029C990 /* URLTransform.swift */; };
-		651E4A6D1FC32D6A0029C990 /* PolygonColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A671FC32D6A0029C990 /* PolygonColorTransform.swift */; };
-		651E4A6E1FC32D6A0029C990 /* PolygonMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A681FC32D6A0029C990 /* PolygonMap.swift */; };
-		651E4A6F1FC32D6A0029C990 /* PolygonRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A691FC32D6A0029C990 /* PolygonRegion.swift */; };
-		651E4A701FC32D6A0029C990 /* RegionMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A6A1FC32D6A0029C990 /* RegionMark.swift */; };
-		651E4A711FC32D6A0029C990 /* RegionPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A6B1FC32D6A0029C990 /* RegionPoint.swift */; };
-		651E4A721FC32D6A0029C990 /* UIPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A6C1FC32D6A0029C990 /* UIPolygonView.swift */; };
-		651E4A7F1FC32E880029C990 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A771FC32E880029C990 /* UIColor.swift */; };
-		651E4A851FC32F470029C990 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E4A841FC32F470029C990 /* String.swift */; };
 		651E4A871FC330070029C990 /* region.json in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A861FC330070029C990 /* region.json */; };
+		68A40D252452D9A50032147E /* RegionMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D1D2452D9A50032147E /* RegionMark.swift */; };
+		68A40D262452D9A50032147E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D1E2452D9A50032147E /* UIColor.swift */; };
+		68A40D272452D9A50032147E /* PolygonColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D1F2452D9A50032147E /* PolygonColorTransform.swift */; };
+		68A40D282452D9A50032147E /* RegionPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D202452D9A50032147E /* RegionPoint.swift */; };
+		68A40D292452D9A50032147E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D212452D9A50032147E /* String.swift */; };
+		68A40D2A2452D9A50032147E /* PolygonRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D222452D9A50032147E /* PolygonRegion.swift */; };
+		68A40D2B2452D9A50032147E /* PolygonMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D232452D9A50032147E /* PolygonMap.swift */; };
+		68A40D2C2452D9A50032147E /* UIPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D242452D9A50032147E /* UIPolygonView.swift */; };
+		68A40D2E2452DA620032147E /* MappableObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D2D2452DA620032147E /* MappableObj.swift */; };
+		C00DC132EEF1CD5508A9F012 /* Pods_PolygonAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A828E69A5AF825914E3ECE9A /* Pods_PolygonAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,39 +33,19 @@
 		651E4A261FC32CDD0029C990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651E4A291FC32CDD0029C990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		651E4A2B1FC32CDD0029C990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		651E4A361FC32D600029C990 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
-		651E4A371FC32D600029C990 /* DataTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransform.swift; sourceTree = "<group>"; };
-		651E4A381FC32D600029C990 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
-		651E4A391FC32D600029C990 /* DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
-		651E4A3A1FC32D600029C990 /* DictionaryTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTransform.swift; sourceTree = "<group>"; };
-		651E4A3B1FC32D600029C990 /* EnumOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumOperators.swift; sourceTree = "<group>"; };
-		651E4A3C1FC32D600029C990 /* EnumTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTransform.swift; sourceTree = "<group>"; };
-		651E4A3D1FC32D600029C990 /* FromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
-		651E4A3E1FC32D600029C990 /* HexColorTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorTransform.swift; sourceTree = "<group>"; };
-		651E4A3F1FC32D600029C990 /* ImmutableMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImmutableMappable.swift; sourceTree = "<group>"; };
-		651E4A401FC32D600029C990 /* IntegerOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerOperators.swift; sourceTree = "<group>"; };
-		651E4A411FC32D600029C990 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
-		651E4A421FC32D600029C990 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
-		651E4A431FC32D600029C990 /* MapError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapError.swift; sourceTree = "<group>"; };
-		651E4A441FC32D600029C990 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
-		651E4A451FC32D600029C990 /* MappableObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappableObj.swift; sourceTree = "<group>"; };
-		651E4A461FC32D600029C990 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
-		651E4A471FC32D600029C990 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
-		651E4A481FC32D600029C990 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		651E4A491FC32D600029C990 /* ToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
-		651E4A4A1FC32D600029C990 /* TransformOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
-		651E4A4B1FC32D600029C990 /* TransformOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOperators.swift; sourceTree = "<group>"; };
-		651E4A4C1FC32D600029C990 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
-		651E4A4D1FC32D600029C990 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
-		651E4A671FC32D6A0029C990 /* PolygonColorTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonColorTransform.swift; sourceTree = "<group>"; };
-		651E4A681FC32D6A0029C990 /* PolygonMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonMap.swift; sourceTree = "<group>"; };
-		651E4A691FC32D6A0029C990 /* PolygonRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonRegion.swift; sourceTree = "<group>"; };
-		651E4A6A1FC32D6A0029C990 /* RegionMark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionMark.swift; sourceTree = "<group>"; };
-		651E4A6B1FC32D6A0029C990 /* RegionPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionPoint.swift; sourceTree = "<group>"; };
-		651E4A6C1FC32D6A0029C990 /* UIPolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPolygonView.swift; sourceTree = "<group>"; };
-		651E4A771FC32E880029C990 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		651E4A841FC32F470029C990 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		651E4A861FC330070029C990 /* region.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = region.json; sourceTree = "<group>"; };
+		68A40D1D2452D9A50032147E /* RegionMark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionMark.swift; sourceTree = "<group>"; };
+		68A40D1E2452D9A50032147E /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		68A40D1F2452D9A50032147E /* PolygonColorTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonColorTransform.swift; sourceTree = "<group>"; };
+		68A40D202452D9A50032147E /* RegionPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionPoint.swift; sourceTree = "<group>"; };
+		68A40D212452D9A50032147E /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		68A40D222452D9A50032147E /* PolygonRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonRegion.swift; sourceTree = "<group>"; };
+		68A40D232452D9A50032147E /* PolygonMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonMap.swift; sourceTree = "<group>"; };
+		68A40D242452D9A50032147E /* UIPolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPolygonView.swift; sourceTree = "<group>"; };
+		68A40D2D2452DA620032147E /* MappableObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappableObj.swift; sourceTree = "<group>"; };
+		733020B5131D1E559A19A41A /* Pods-PolygonAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PolygonAPI.release.xcconfig"; path = "Target Support Files/Pods-PolygonAPI/Pods-PolygonAPI.release.xcconfig"; sourceTree = "<group>"; };
+		A828E69A5AF825914E3ECE9A /* Pods_PolygonAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PolygonAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF8D6A2BE1A47718D9B6F46 /* Pods-PolygonAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PolygonAPI.debug.xcconfig"; path = "Target Support Files/Pods-PolygonAPI/Pods-PolygonAPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00DC132EEF1CD5508A9F012 /* Pods_PolygonAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24803A7FD745F8ACF2AAA4F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFF8D6A2BE1A47718D9B6F46 /* Pods-PolygonAPI.debug.xcconfig */,
+				733020B5131D1E559A19A41A /* Pods-PolygonAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		651E4A131FC32CDD0029C990 = {
 			isa = PBXGroup;
 			children = (
 				651E4A1E1FC32CDD0029C990 /* PolygonAPI */,
 				651E4A1D1FC32CDD0029C990 /* Products */,
+				24803A7FD745F8ACF2AAA4F3 /* Pods */,
+				913F56C412D08ADD950DC518 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,9 +90,7 @@
 		651E4A1E1FC32CDD0029C990 /* PolygonAPI */ = {
 			isa = PBXGroup;
 			children = (
-				651E4A731FC32E880029C990 /* Extension */,
-				651E4A351FC32D600029C990 /* ObjectMapper */,
-				651E4A661FC32D6A0029C990 /* Polygon */,
+				68A40D1C2452D9A50032147E /* Sources */,
 				651E4A1F1FC32CDD0029C990 /* AppDelegate.swift */,
 				651E4A211FC32CDD0029C990 /* ViewController.swift */,
 				651E4A861FC330070029C990 /* region.json */,
@@ -134,57 +102,28 @@
 			path = PolygonAPI;
 			sourceTree = "<group>";
 		};
-		651E4A351FC32D600029C990 /* ObjectMapper */ = {
+		68A40D1C2452D9A50032147E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				651E4A361FC32D600029C990 /* CustomDateFormatTransform.swift */,
-				651E4A371FC32D600029C990 /* DataTransform.swift */,
-				651E4A381FC32D600029C990 /* DateFormatterTransform.swift */,
-				651E4A391FC32D600029C990 /* DateTransform.swift */,
-				651E4A3A1FC32D600029C990 /* DictionaryTransform.swift */,
-				651E4A3B1FC32D600029C990 /* EnumOperators.swift */,
-				651E4A3C1FC32D600029C990 /* EnumTransform.swift */,
-				651E4A3D1FC32D600029C990 /* FromJSON.swift */,
-				651E4A3E1FC32D600029C990 /* HexColorTransform.swift */,
-				651E4A3F1FC32D600029C990 /* ImmutableMappable.swift */,
-				651E4A401FC32D600029C990 /* IntegerOperators.swift */,
-				651E4A411FC32D600029C990 /* ISO8601DateTransform.swift */,
-				651E4A421FC32D600029C990 /* Map.swift */,
-				651E4A431FC32D600029C990 /* MapError.swift */,
-				651E4A441FC32D600029C990 /* Mappable.swift */,
-				651E4A451FC32D600029C990 /* MappableObj.swift */,
-				651E4A461FC32D600029C990 /* Mapper.swift */,
-				651E4A471FC32D600029C990 /* NSDecimalNumberTransform.swift */,
-				651E4A481FC32D600029C990 /* Operators.swift */,
-				651E4A491FC32D600029C990 /* ToJSON.swift */,
-				651E4A4A1FC32D600029C990 /* TransformOf.swift */,
-				651E4A4B1FC32D600029C990 /* TransformOperators.swift */,
-				651E4A4C1FC32D600029C990 /* TransformType.swift */,
-				651E4A4D1FC32D600029C990 /* URLTransform.swift */,
+				68A40D1E2452D9A50032147E /* UIColor.swift */,
+				68A40D212452D9A50032147E /* String.swift */,
+				68A40D1D2452D9A50032147E /* RegionMark.swift */,
+				68A40D2D2452DA620032147E /* MappableObj.swift */,
+				68A40D1F2452D9A50032147E /* PolygonColorTransform.swift */,
+				68A40D202452D9A50032147E /* RegionPoint.swift */,
+				68A40D222452D9A50032147E /* PolygonRegion.swift */,
+				68A40D232452D9A50032147E /* PolygonMap.swift */,
+				68A40D242452D9A50032147E /* UIPolygonView.swift */,
 			);
-			path = ObjectMapper;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		651E4A661FC32D6A0029C990 /* Polygon */ = {
+		913F56C412D08ADD950DC518 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				651E4A671FC32D6A0029C990 /* PolygonColorTransform.swift */,
-				651E4A681FC32D6A0029C990 /* PolygonMap.swift */,
-				651E4A691FC32D6A0029C990 /* PolygonRegion.swift */,
-				651E4A6A1FC32D6A0029C990 /* RegionMark.swift */,
-				651E4A6B1FC32D6A0029C990 /* RegionPoint.swift */,
-				651E4A6C1FC32D6A0029C990 /* UIPolygonView.swift */,
+				A828E69A5AF825914E3ECE9A /* Pods_PolygonAPI.framework */,
 			);
-			path = Polygon;
-			sourceTree = "<group>";
-		};
-		651E4A731FC32E880029C990 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				651E4A841FC32F470029C990 /* String.swift */,
-				651E4A771FC32E880029C990 /* UIColor.swift */,
-			);
-			path = Extension;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 651E4A2E1FC32CDD0029C990 /* Build configuration list for PBXNativeTarget "PolygonAPI" */;
 			buildPhases = (
+				AA3225249B8E80639C3C47EE /* [CP] Check Pods Manifest.lock */,
 				651E4A181FC32CDD0029C990 /* Sources */,
 				651E4A191FC32CDD0029C990 /* Frameworks */,
 				651E4A1A1FC32CDD0029C990 /* Resources */,
+				97A0B18D5A0224120B07A43E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,45 +197,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		97A0B18D5A0224120B07A43E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PolygonAPI/Pods-PolygonAPI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PolygonAPI/Pods-PolygonAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA3225249B8E80639C3C47EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PolygonAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		651E4A181FC32CDD0029C990 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651E4A571FC32D600029C990 /* ImmutableMappable.swift in Sources */,
-				651E4A5B1FC32D600029C990 /* MapError.swift in Sources */,
-				651E4A6F1FC32D6A0029C990 /* PolygonRegion.swift in Sources */,
-				651E4A601FC32D600029C990 /* Operators.swift in Sources */,
-				651E4A591FC32D600029C990 /* ISO8601DateTransform.swift in Sources */,
-				651E4A4F1FC32D600029C990 /* DataTransform.swift in Sources */,
-				651E4A521FC32D600029C990 /* DictionaryTransform.swift in Sources */,
-				651E4A711FC32D6A0029C990 /* RegionPoint.swift in Sources */,
-				651E4A6D1FC32D6A0029C990 /* PolygonColorTransform.swift in Sources */,
-				651E4A531FC32D600029C990 /* EnumOperators.swift in Sources */,
-				651E4A4E1FC32D600029C990 /* CustomDateFormatTransform.swift in Sources */,
-				651E4A5D1FC32D600029C990 /* MappableObj.swift in Sources */,
-				651E4A7F1FC32E880029C990 /* UIColor.swift in Sources */,
-				651E4A511FC32D600029C990 /* DateTransform.swift in Sources */,
-				651E4A5C1FC32D600029C990 /* Mappable.swift in Sources */,
-				651E4A561FC32D600029C990 /* HexColorTransform.swift in Sources */,
-				651E4A721FC32D6A0029C990 /* UIPolygonView.swift in Sources */,
-				651E4A651FC32D600029C990 /* URLTransform.swift in Sources */,
-				651E4A621FC32D600029C990 /* TransformOf.swift in Sources */,
-				651E4A551FC32D600029C990 /* FromJSON.swift in Sources */,
+				68A40D252452D9A50032147E /* RegionMark.swift in Sources */,
+				68A40D262452D9A50032147E /* UIColor.swift in Sources */,
+				68A40D2A2452D9A50032147E /* PolygonRegion.swift in Sources */,
+				68A40D272452D9A50032147E /* PolygonColorTransform.swift in Sources */,
+				68A40D2E2452DA620032147E /* MappableObj.swift in Sources */,
+				68A40D2B2452D9A50032147E /* PolygonMap.swift in Sources */,
 				651E4A221FC32CDD0029C990 /* ViewController.swift in Sources */,
-				651E4A701FC32D6A0029C990 /* RegionMark.swift in Sources */,
-				651E4A611FC32D600029C990 /* ToJSON.swift in Sources */,
-				651E4A5A1FC32D600029C990 /* Map.swift in Sources */,
-				651E4A5F1FC32D600029C990 /* NSDecimalNumberTransform.swift in Sources */,
-				651E4A541FC32D600029C990 /* EnumTransform.swift in Sources */,
-				651E4A581FC32D600029C990 /* IntegerOperators.swift in Sources */,
-				651E4A641FC32D600029C990 /* TransformType.swift in Sources */,
+				68A40D292452D9A50032147E /* String.swift in Sources */,
+				68A40D282452D9A50032147E /* RegionPoint.swift in Sources */,
 				651E4A201FC32CDD0029C990 /* AppDelegate.swift in Sources */,
-				651E4A501FC32D600029C990 /* DateFormatterTransform.swift in Sources */,
-				651E4A6E1FC32D6A0029C990 /* PolygonMap.swift in Sources */,
-				651E4A851FC32F470029C990 /* String.swift in Sources */,
-				651E4A631FC32D600029C990 /* TransformOperators.swift in Sources */,
-				651E4A5E1FC32D600029C990 /* Mapper.swift in Sources */,
+				68A40D2C2452D9A50032147E /* UIPolygonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +392,7 @@
 		};
 		651E4A2F1FC32CDD0029C990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFF8D6A2BE1A47718D9B6F46 /* Pods-PolygonAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +407,7 @@
 		};
 		651E4A301FC32CDD0029C990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733020B5131D1E559A19A41A /* Pods-PolygonAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
