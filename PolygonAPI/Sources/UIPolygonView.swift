@@ -80,82 +80,85 @@ public protocol UIPolygonViewDelegate: class
     {
         super.draw(rect)
  
-        if self.regions.count > 0
+        if self.regions.count == 0
         {
-            let path = UIBezierPath()
+            return
+        }
+        
+        
+        let path = UIBezierPath()
+        
+        for region in self.regions
+        {
+            // draw region
+            self.drawLine(region, path: path, fill: true, color: region.regionColor)
+
             
-            for region in self.regions
+            // draw highlight region
+            if let clicked = self.clickedRegion, clicked.regionId == region.regionId
             {
-                // draw region
-                self.drawLine(region, path: path, fill: true, color: region.regionColor)
-
-                
-                // draw highlight region
-                if let clicked = self.clickedRegion, clicked.regionId == region.regionId
+                self.drawLine(clicked, path: path, fill: true, color: self.highlightColor)
+            }
+            
+            
+            // draw border line
+            self.drawLine(region, path: path, fill: false, color: self.borderColor)
+            
+            
+            // draw title
+            if let title = region.titleInfo.title, title.length > 0
+            {
+                let size = title.sizeWithFont(self.titleFont)
+             
+                var p = region.titleInfo.position.position
+                if p.x < 0 || p.y < 0
                 {
-                    self.drawLine(clicked, path: path, fill: true, color: self.highlightColor)
+                    p = region.getCentral()
                 }
                 
-                
-                // draw border line
-                self.drawLine(region, path: path, fill: false, color: self.borderColor)
-                
-                
-                // draw title
-                if let title = region.titleInfo.title, title.length > 0
+                let rect = CGRect(x: p.x - size.width/2, y: p.y - size.height/2, width: size.width, height: size.height)
+
+                self.drawString(title, rect: rect, font: self.titleFont, color: self.titleColor)
+            }
+            
+            
+            // draw mark
+            if region.hasMark()
+            {
+                for mark in region.marks
                 {
-                    let size = title.sizeWithFont(self.titleFont)
-                 
-                    var p = region.titleInfo.position.position
-                    if p.x < 0 || p.y < 0
-                    {
-                        p = region.getCentral()
-                    }
+                    var color: UIColor!
                     
-                    let rect = CGRect(x: p.x - size.width/2, y: p.y - size.height/2, width: size.width, height: size.height)
-
-                    self.drawString(title, rect: rect, font: self.titleFont, color: self.titleColor)
-                }
-                
-                
-                // draw mark
-                if region.hasMark()
-                {
-                    for mark in region.marks
+                    if let clicked = self.clickedMark, clicked === mark
                     {
-                        var color: UIColor!
-                        
-                        if let clicked = self.clickedMark, clicked === mark
-                        {
-                            color = self.highlightMarkColor
-                        }
-                        else
-                        {
-                            color = mark.color
-                        }
- 
-                        path.removeAllPoints()
-                        
-                        path.addArc(
-                        withCenter: mark.position.position,
-                        radius: REGION_MARK_RADIUS,
-                        startAngle: 0,
-                        endAngle: CGFloat(2 * Double.pi),
-                        clockwise: true)
+                        color = self.highlightMarkColor
+                    }
+                    else
+                    {
+                        color = mark.color
+                    }
 
-                        path.close()
-                        color.setFill()
-                        path.fill()
-                        
-                        
-                        if let title = mark.title, title.length > 0
-                        {
-                            let size = title.sizeWithFont(self.titleFont)
-                            let p = mark.position.position
-                            let rect = CGRect(x: p.x - size.width/2, y: p.y + REGION_MARK_RADIUS, width: size.width, height: size.height)
-   
-                            self.drawString(title, rect: rect, font: self.titleFont, color: color)
-                        }
+                    path.removeAllPoints()
+                    
+                    path.addArc(
+                    withCenter: mark.position.position,
+                    radius: REGION_MARK_RADIUS,
+                    startAngle: 0,
+                    endAngle: CGFloat(2 * Double.pi),
+                    clockwise: true)
+
+                    path.close()
+                    color.setFill()
+                    path.fill()
+                    
+                    
+                    if let title = mark.title, title.length > 0
+                    {
+                        let size = title.sizeWithFont(self.titleFont)
+                        let p = mark.position.position
+                        let rect = CGRect(x: p.x - size.width/2, y: p.y + REGION_MARK_RADIUS, width: size.width, height: size.height)
+
+                        self.drawString(title, rect: rect, font: self.titleFont, color: color)
                     }
                 }
             }
@@ -374,47 +377,49 @@ internal extension UIPolygonView
     
     private func fitCenter()
     {
-        if self.fitToCenter && self.regions.count > 0
+        if !self.fitToCenter || self.regions.count == 0
         {
-            let offset = self.getCenterOffset()
-            
-            if offset.x != 0 || offset.y != 0
+            return
+        }
+        
+        
+        let offset = self.getCenterOffset()
+        if offset.x != 0 || offset.y != 0
+        {
+            for region in self.regions
             {
-                for region in self.regions
+                if region.points.count > 0
                 {
-                    if region.points.count > 0
+                    autoreleasepool
                     {
-                        autoreleasepool
-                        {
-                            var points = [RegionPoint]()
-                            points.append(contentsOf: region.points)
-                            
-                            region.clearPoints()
+                        var points = [RegionPoint]()
+                        points.append(contentsOf: region.points)
+                        
+                        region.clearPoints()
 
-                            for rp in points
-                            {
-                                rp.x += offset.x
-                                rp.y += offset.y
-                                
-                                region.points.append(rp)
-                            }
+                        for rp in points
+                        {
+                            rp.x += offset.x
+                            rp.y += offset.y
                             
-                            if region.hasMark()
+                            region.points.append(rp)
+                        }
+                        
+                        if region.hasMark()
+                        {
+                            for mark in region.marks
                             {
-                                for mark in region.marks
-                                {
-                                    mark.position.x += offset.x
-                                    mark.position.y += offset.y
-                                }
+                                mark.position.x += offset.x
+                                mark.position.y += offset.y
                             }
                         }
                     }
-                    
-                    if region.titleInfo.position.x >= 0 && region.titleInfo.position.y >= 0
-                    {
-                        region.titleInfo.position.x += offset.x
-                        region.titleInfo.position.y += offset.y
-                    }
+                }
+                
+                if region.titleInfo.position.x >= 0 && region.titleInfo.position.y >= 0
+                {
+                    region.titleInfo.position.x += offset.x
+                    region.titleInfo.position.y += offset.y
                 }
             }
         }
