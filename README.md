@@ -1,11 +1,11 @@
 ﻿# Polygon_iOS_API
 a iOS swift Polygon UI View component 
 
-提供在 iOS app 自定義多邊型區塊圖樣呈現:<br>
+present a custom defined polygon view: <br>
 <img src="/rm_res/cut1.png" alt="screen cut" width="50%" height="50%" align="bottom" /><br><br>
-可透過程式碼組成區塊或是透過json檔匯入區塊資訊呈現畫面<br>
-(json剖析使用 ObjectMapper 模組處理 https://github.com/Hearst-DD/ObjectMapper)<br>
-並提供點擊事件呼叫動作
+
+The API could load data from code for json file(json parsing by ObjectMapper https://github.com/Hearst-DD/ObjectMapper)
+<br>and supports event callback
 
 
 
