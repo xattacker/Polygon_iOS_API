@@ -1,5 +1,5 @@
 ﻿# Polygon_iOS_API
-a iOS swift Polygon UI View component 
+an iOS swift Polygon UI View component 
 
 present a custom defined polygon view: <br>
 <img src="/rm_res/cut1.png" alt="screen cut" width="50%" height="50%" align="bottom" /><br><br>
