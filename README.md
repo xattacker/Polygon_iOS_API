@@ -1,9 +1,8 @@
 ﻿# Polygon_iOS_API
 an iOS swift Polygon UI View component 
-
 <br>
 Development Target: iOS 10
-<br>
+<br><br>
 
 Android version API: https://github.com/xattacker/Polygon_Android_API<br>
 
