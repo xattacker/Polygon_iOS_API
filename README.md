@@ -1,6 +1,8 @@
 ﻿# Polygon_iOS_API
 an iOS swift Polygon UI View component 
 
+Android version API: https://github.com/xattacker/Polygon_Android_API<br>
+
 present a custom defined polygon view: <br>
 <img src="/rm_res/cut1.png" alt="screen cut" width="50%" height="50%" align="bottom" /><br><br>
 
