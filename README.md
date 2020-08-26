@@ -22,6 +22,15 @@ pod 'ObjectMapper'
 pod 'PolygonAPI'
 ```
 
+### Swift Package Manager
+To add PolygonAPI to a [Swift Package Manager](https://swift.org/package-manager/) based project, add:
+
+```swift
+.package(url: "https://github.com/xattacker/Polygon_iOS_API.git", .upToNextMajor(from: "1.0.6")),
+.package(url: "https://github.com/tristanhimmelman/ObjectMapper.git", .upToNextMajor(from: "4.1.0")),
+```
+to your `Package.swift` files `dependencies` array.
+
 
 ### How to use:
 
