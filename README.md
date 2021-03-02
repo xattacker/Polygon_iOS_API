@@ -1,5 +1,5 @@
 ﻿# Polygon_iOS_API
-an iOS swift Polygon UI View component 
+an iOS swift Polygon  UI View component 
 <br><br>
 Development Target: iOS 9
 <br><br>
