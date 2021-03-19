@@ -76,6 +76,20 @@ region.addPoint(CGPoint(x: 291, y: 19))
 region.addPoint(CGPoint(x: 269, y: 2))
 region.addPoint(CGPoint(x: 254, y: 30))
 region.addPoint(CGPoint(x: 192, y: 49))
-
 self.polygonView.addRegion(region)
+
+
+// the API provides delegate to catch some events
+extension ViewController: UIPolygonViewDelegate
+{
+    func onRegionClicked(region: PolygonRegion)
+    {
+        // click region area event callback
+    }
+    
+    func onRegionMarkClicked(mark: RegionMark, region: PolygonRegion)
+    {
+        // click mark event callback
+    }
+}
 ```
