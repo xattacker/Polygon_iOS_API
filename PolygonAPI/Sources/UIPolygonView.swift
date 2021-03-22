@@ -432,27 +432,24 @@ internal extension UIPolygonView
         
         for region in self.regions
         {
-            if region.points.count > 0
+            for point in region.points
             {
-                for point in region.points
+                if minX > point.x
                 {
-                    if minX > point.x
-                    {
-                        minX = point.x
-                    }
-                    else if maxX < point.x
-                    {
-                        maxX = point.x
-                    }
-                    
-                    if minY > point.y
-                    {
-                        minY = point.y
-                    }
-                    else if maxY < point.y
-                    {
-                        maxY = point.y
-                    }
+                    minX = point.x
+                }
+                else if maxX < point.x
+                {
+                    maxX = point.x
+                }
+
+                if minY > point.y
+                {
+                    minY = point.y
+                }
+                else if maxY < point.y
+                {
+                    maxY = point.y
                 }
             }
         }
