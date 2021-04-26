@@ -54,7 +54,7 @@ public protocol UIPolygonViewDelegate: class
     @IBInspectable public var fitToCenter: Bool = true
     public weak var delegate: UIPolygonViewDelegate?
     
-    private var regions: [PolygonRegion] = [PolygonRegion]()
+    private var regions = [PolygonRegion]()
     private weak var clickedRegion: PolygonRegion?
     private weak var clickedMark: RegionMark?
     private var ratioW: Float = 1, ratioH: Float = 1
