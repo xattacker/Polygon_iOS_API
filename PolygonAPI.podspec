@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'PolygonAPI'
-  s.version = '1.0.0'
+  s.version = '1.0.2'
   s.license = 'BSD'
   s.summary = 'Polygon View iOS Swift API'
   s.homepage = 'https://github.com/xattacker/Polygon_iOS_API'
