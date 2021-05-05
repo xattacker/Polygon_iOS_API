@@ -9,7 +9,7 @@
 import UIKit
 
 
-public protocol UIPolygonViewDelegate: class
+public protocol UIPolygonViewDelegate: AnyObject
 {
     func onRegionClicked(region: PolygonRegion)
     func onRegionMarkClicked(mark: RegionMark, region: PolygonRegion)
