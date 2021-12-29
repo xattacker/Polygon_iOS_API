@@ -20,6 +20,11 @@ public final class PolygonRegion: MappableObj
     public var points: [RegionPoint] = [RegionPoint]()
     public var marks: [RegionMark] = [RegionMark]()
     
+    public var hasMark: Bool
+    {
+        return self.marks.count > 0
+    }
+    
     public func addPoint(_ point: CGPoint)
     {
         let rp = RegionPoint()
@@ -88,12 +93,7 @@ public final class PolygonRegion: MappableObj
         
         return CGPoint(x: CGFloat(central_x/Float(size)), y: CGFloat(central_y/Float(size)))
     }
-    
-    public func hasMark() -> Bool
-    {
-        return self.marks.count > 0
-    }
-    
+
     public func scalePoints(_ ratio: Float)
     {
         autoreleasepool
@@ -107,11 +107,10 @@ public final class PolygonRegion: MappableObj
             {
                 rp.x *= ratio
                 rp.y *= ratio
-                
                 self.points.append(rp)
             }
             
-            if self.hasMark()
+            if self.hasMark
             {
                 for mark in self.marks
                 {

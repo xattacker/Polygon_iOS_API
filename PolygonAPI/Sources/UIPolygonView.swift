@@ -23,7 +23,7 @@ public protocol UIPolygonViewDelegate: AnyObject
     @IBInspectable public var highlightMarkColor: UIColor = UIColor.gray.withAlphaComponent(0.5)
    
     @IBInspectable public var titleColor: UIColor = UIColor.black
-    @IBInspectable public var titleFont: UIFont = UIFont.systemFont(ofSize: 16)
+    @IBInspectable public var titleFont: UIFont = UIFont.preferredFont(forTextStyle: .body)
     
     public var baseSize: CGSize = CGSize.zero
     {
@@ -106,7 +106,7 @@ public protocol UIPolygonViewDelegate: AnyObject
             
             
             // draw title
-            if let title = region.titleInfo.title, title.length > 0
+            if let title = region.titleInfo.title, title.count > 0
             {
                 let size = title.sizeWithFont(self.titleFont)
              
@@ -123,7 +123,7 @@ public protocol UIPolygonViewDelegate: AnyObject
             
             
             // draw mark
-            if region.hasMark()
+            if region.hasMark
             {
                 for mark in region.marks
                 {
@@ -152,7 +152,7 @@ public protocol UIPolygonViewDelegate: AnyObject
                     path.fill()
                     
                     
-                    if let title = mark.title, title.length > 0
+                    if let title = mark.title, title.count > 0
                     {
                         let size = title.sizeWithFont(self.titleFont)
                         let p = mark.position.position
@@ -258,7 +258,7 @@ extension UIPolygonView
         
         for region in self.regions
         {
-            if region.hasMark()
+            if region.hasMark
             {
                 var hit = false
                 
@@ -405,7 +405,7 @@ internal extension UIPolygonView
                             region.points.append(rp)
                         }
                         
-                        if region.hasMark()
+                        if region.hasMark
                         {
                             for mark in region.marks
                             {

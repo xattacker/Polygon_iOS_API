@@ -17,10 +17,7 @@ public final class RegionPoint: MappableObj
     
     public var position: CGPoint
     {
-        get
-        {
-            return CGPoint(x: CGFloat(self.x), y: CGFloat(self.y))
-        }
+        return CGPoint(x: CGFloat(self.x), y: CGFloat(self.y))
     }
     
     public override func mapping(map: Map)
