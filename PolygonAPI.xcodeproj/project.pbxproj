@@ -21,7 +21,6 @@
 		68A40D2A2452D9A50032147E /* PolygonRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D222452D9A50032147E /* PolygonRegion.swift */; };
 		68A40D2B2452D9A50032147E /* PolygonMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D232452D9A50032147E /* PolygonMap.swift */; };
 		68A40D2C2452D9A50032147E /* UIPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D242452D9A50032147E /* UIPolygonView.swift */; };
-		68A40D2E2452DA620032147E /* MappableObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D2D2452DA620032147E /* MappableObj.swift */; };
 		C00DC132EEF1CD5508A9F012 /* Pods_PolygonAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A828E69A5AF825914E3ECE9A /* Pods_PolygonAPI.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +41,6 @@
 		68A40D222452D9A50032147E /* PolygonRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonRegion.swift; sourceTree = "<group>"; };
 		68A40D232452D9A50032147E /* PolygonMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonMap.swift; sourceTree = "<group>"; };
 		68A40D242452D9A50032147E /* UIPolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPolygonView.swift; sourceTree = "<group>"; };
-		68A40D2D2452DA620032147E /* MappableObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappableObj.swift; sourceTree = "<group>"; };
 		733020B5131D1E559A19A41A /* Pods-PolygonAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PolygonAPI.release.xcconfig"; path = "Target Support Files/Pods-PolygonAPI/Pods-PolygonAPI.release.xcconfig"; sourceTree = "<group>"; };
 		A828E69A5AF825914E3ECE9A /* Pods_PolygonAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PolygonAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF8D6A2BE1A47718D9B6F46 /* Pods-PolygonAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PolygonAPI.debug.xcconfig"; path = "Target Support Files/Pods-PolygonAPI/Pods-PolygonAPI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				68A40D1E2452D9A50032147E /* UIColor.swift */,
 				68A40D212452D9A50032147E /* String.swift */,
 				68A40D1D2452D9A50032147E /* RegionMark.swift */,
-				68A40D2D2452DA620032147E /* MappableObj.swift */,
 				68A40D1F2452D9A50032147E /* PolygonColorTransform.swift */,
 				68A40D202452D9A50032147E /* RegionPoint.swift */,
 				68A40D222452D9A50032147E /* PolygonRegion.swift */,
@@ -249,7 +246,6 @@
 				68A40D262452D9A50032147E /* UIColor.swift in Sources */,
 				68A40D2A2452D9A50032147E /* PolygonRegion.swift in Sources */,
 				68A40D272452D9A50032147E /* PolygonColorTransform.swift in Sources */,
-				68A40D2E2452DA620032147E /* MappableObj.swift in Sources */,
 				68A40D2B2452D9A50032147E /* PolygonMap.swift in Sources */,
 				651E4A221FC32CDD0029C990 /* ViewController.swift in Sources */,
 				68A40D292452D9A50032147E /* String.swift in Sources */,

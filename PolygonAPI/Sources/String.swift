@@ -33,7 +33,7 @@ import UIKit
 /*
 String for swift provides many of the String API convenience methods from javascript (and some from python).
 */
-extension String
+internal extension String
 {
     /**
     Returns length of the string
@@ -473,67 +473,5 @@ extension String
             print("Error converting \"" + self + "\" to Double")
             return 0.0
         }
-    }
-}
-
-
-extension Int
-{
-    public func toString() -> String
-    {
-        return String(self)
-    }
-}
-
-
-extension Int8
-{
-    public func toString() -> String
-    {
-        return String(self)
-    }
-}
-
-
-extension Int16
-{
-    public func toString() -> String
-    {
-        return String(self)
-    }
-}
-
-
-extension Int32
-{
-    public func toString() -> String
-    {
-        return String(self)
-    }
-}
-
-extension Int64
-{
-    public func toString() -> String
-    {
-        return String(self)
-    }
-}
-
-
-extension Float
-{
-    public func toString() -> String
-    {
-        return String(self)
-    }
-}
-
-
-extension Double
-{
-    public func toString() -> String
-    {
-        return String(self)
     }
 }

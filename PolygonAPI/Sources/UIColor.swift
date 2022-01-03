@@ -9,9 +9,9 @@
 import UIKit
 
 
-extension UIColor
+internal extension UIColor
 {
-    public convenience init(decimalRed: Int, green: Int, blue: Int, alpha: CGFloat = 1)
+    convenience init(decimalRed: Int, green: Int, blue: Int, alpha: CGFloat = 1)
     {
         self.init(red:
         CGFloat(decimalRed) / CGFloat(255),
@@ -20,7 +20,7 @@ extension UIColor
         alpha: alpha)
     }
     
-    public convenience init(hexString: String)
+    convenience init(hexString: String)
     {
         let str = hexString.replacingOccurrences(of: "#", with: "")
         
@@ -56,7 +56,7 @@ extension UIColor
         }
     }
     
-    public func getRGBValue(_ red: inout CGFloat, green: inout CGFloat, blue: inout CGFloat, alpha: inout CGFloat)
+    func getRGBValue(_ red: inout CGFloat, green: inout CGFloat, blue: inout CGFloat, alpha: inout CGFloat)
     {
         let rgb = self.cgColor.components
         let size = self.cgColor.numberOfComponents
@@ -80,13 +80,13 @@ extension UIColor
         }
     }
     
-    public func getRGBValue(_ red: inout CGFloat, green: inout CGFloat, blue: inout CGFloat)
+    func getRGBValue(_ red: inout CGFloat, green: inout CGFloat, blue: inout CGFloat)
     {
         var alpha = CGFloat(0) // inout parameter could not set default value for nil
         self.getRGBValue(&red, green: &green, blue: &blue, alpha: &alpha)
     }
     
-    public func getAlphaValue(_ alpha: inout CGFloat)
+    func getAlphaValue(_ alpha: inout CGFloat)
     {
         var r = CGFloat(0)
         var g = CGFloat(0)
@@ -94,7 +94,7 @@ extension UIColor
         self.getRGBValue(&r, green: &g, blue: &b, alpha: &alpha)
     }
     
-    public var hexString: String
+    var hexString: String
     {
         get
         {

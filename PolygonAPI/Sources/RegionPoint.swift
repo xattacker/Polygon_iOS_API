@@ -10,7 +10,7 @@ import UIKit
 import ObjectMapper
 
 
-public final class RegionPoint: MappableObj
+public final class RegionPoint: Mappable
 {
     public var x: Float = 0
     public var y: Float = 0
@@ -20,10 +20,16 @@ public final class RegionPoint: MappableObj
         return CGPoint(x: CGFloat(self.x), y: CGFloat(self.y))
     }
     
-    public override func mapping(map: Map)
+    public required init()
     {
-        super.mapping(map: map)
-        
+    }
+    
+    public required init?(map: Map)
+    {
+    }
+    
+    public func mapping(map: Map)
+    { 
         self.x      <- map["x"]
         self.y      <- map["y"]
     }

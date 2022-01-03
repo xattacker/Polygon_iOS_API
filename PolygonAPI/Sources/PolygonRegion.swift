@@ -10,7 +10,7 @@ import UIKit
 import ObjectMapper
 
 
-public final class PolygonRegion: MappableObj
+public final class PolygonRegion: Mappable
 {
     public var regionId: String?
     public var regionColor: UIColor = UIColor.clear
@@ -23,6 +23,14 @@ public final class PolygonRegion: MappableObj
     public var hasMark: Bool
     {
         return self.marks.count > 0
+    }
+    
+    public required init()
+    {
+    }
+    
+    public required init?(map: Map)
+    {
     }
     
     public func addPoint(_ point: CGPoint)
@@ -127,10 +135,8 @@ public final class PolygonRegion: MappableObj
         }
     }
 
-    public override func mapping(map: Map)
+    public func mapping(map: Map)
     {
-        super.mapping(map: map)
-        
         self.regionId      <- map["id"]
         self.regionColor   <- (map["color"], PolygonColorTransform())
         
@@ -142,15 +148,21 @@ public final class PolygonRegion: MappableObj
 }
 
 
-public final class RegionTitleInfo: MappableObj
+public final class RegionTitleInfo: Mappable
 {
     public var title: String?
     public var position: RegionPoint = RegionPoint()
-
-    public override func mapping(map: Map)
+    
+    public required init()
     {
-        super.mapping(map: map)
-        
+    }
+    
+    public required init?(map: Map)
+    {
+    }
+    
+    public func mapping(map: Map)
+    {
         self.title      <- map["title"]
         self.position   <- map["position"]
     }

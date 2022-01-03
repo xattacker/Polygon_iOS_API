@@ -10,7 +10,7 @@ import UIKit
 import ObjectMapper
 
 
-public final class PolygonMap: MappableObj
+public final class PolygonMap: Mappable
 {
     public var width: Float = 0
     public var height: Float = 0
@@ -22,10 +22,16 @@ public final class PolygonMap: MappableObj
     
     public var regions: [PolygonRegion] = [PolygonRegion]()
     
-    public override func mapping(map: Map)
+    public required init()
     {
-        super.mapping(map: map)
-        
+    }
+    
+    public required init?(map: Map)
+    {
+    }
+    
+    public func mapping(map: Map)
+    {
         self.width                  <- map["width"]
         self.height                 <- map["height"]
         

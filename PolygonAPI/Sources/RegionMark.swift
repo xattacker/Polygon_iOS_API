@@ -13,7 +13,7 @@ import ObjectMapper
 public let REGION_MARK_RADIUS = CGFloat(12.5)
 
 
-public final class RegionMark: MappableObj
+public final class RegionMark: Mappable
 {
     public var markId: String?
     public var title: String?
@@ -21,6 +21,14 @@ public final class RegionMark: MappableObj
     public var position: RegionPoint = RegionPoint()
     
     public weak var belongRegion: PolygonRegion?
+    
+    public required init()
+    {
+    }
+    
+    public required init?(map: Map)
+    {
+    }
     
     public func isPointInRegion(_ point: CGPoint) -> Bool
     {
@@ -39,10 +47,8 @@ public final class RegionMark: MappableObj
         return hit
     }
     
-    public override func mapping(map: Map)
+    public func mapping(map: Map)
     {
-        super.mapping(map: map)
-        
         self.markId      <- map["id"]
         self.title       <- map["title"]
         self.color       <- (map["color"], PolygonColorTransform())
