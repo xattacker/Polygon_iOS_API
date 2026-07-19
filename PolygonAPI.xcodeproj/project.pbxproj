@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		651E4A271FC32CDD0029C990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A261FC32CDD0029C990 /* Assets.xcassets */; };
 		651E4A2A1FC32CDD0029C990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A281FC32CDD0029C990 /* LaunchScreen.storyboard */; };
 		651E4A871FC330070029C990 /* region.json in Resources */ = {isa = PBXBuildFile; fileRef = 651E4A861FC330070029C990 /* region.json */; };
+		65FD9AF1300D07D40080215D /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 65FD9AF0300D07D40080215D /* ObjectMapper */; };
 		68A40D252452D9A50032147E /* RegionMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D1D2452D9A50032147E /* RegionMark.swift */; };
 		68A40D262452D9A50032147E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D1E2452D9A50032147E /* UIColor.swift */; };
 		68A40D272452D9A50032147E /* PolygonColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D1F2452D9A50032147E /* PolygonColorTransform.swift */; };
@@ -21,7 +22,6 @@
 		68A40D2A2452D9A50032147E /* PolygonRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D222452D9A50032147E /* PolygonRegion.swift */; };
 		68A40D2B2452D9A50032147E /* PolygonMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D232452D9A50032147E /* PolygonMap.swift */; };
 		68A40D2C2452D9A50032147E /* UIPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A40D242452D9A50032147E /* UIPolygonView.swift */; };
-		C00DC132EEF1CD5508A9F012 /* Pods_PolygonAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A828E69A5AF825914E3ECE9A /* Pods_PolygonAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +41,6 @@
 		68A40D222452D9A50032147E /* PolygonRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonRegion.swift; sourceTree = "<group>"; };
 		68A40D232452D9A50032147E /* PolygonMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonMap.swift; sourceTree = "<group>"; };
 		68A40D242452D9A50032147E /* UIPolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPolygonView.swift; sourceTree = "<group>"; };
-		733020B5131D1E559A19A41A /* Pods-PolygonAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PolygonAPI.release.xcconfig"; path = "Target Support Files/Pods-PolygonAPI/Pods-PolygonAPI.release.xcconfig"; sourceTree = "<group>"; };
-		A828E69A5AF825914E3ECE9A /* Pods_PolygonAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PolygonAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFF8D6A2BE1A47718D9B6F46 /* Pods-PolygonAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PolygonAPI.debug.xcconfig"; path = "Target Support Files/Pods-PolygonAPI/Pods-PolygonAPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,28 +48,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00DC132EEF1CD5508A9F012 /* Pods_PolygonAPI.framework in Frameworks */,
+				65FD9AF1300D07D40080215D /* ObjectMapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24803A7FD745F8ACF2AAA4F3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CFF8D6A2BE1A47718D9B6F46 /* Pods-PolygonAPI.debug.xcconfig */,
-				733020B5131D1E559A19A41A /* Pods-PolygonAPI.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		651E4A131FC32CDD0029C990 = {
 			isa = PBXGroup;
 			children = (
 				651E4A1E1FC32CDD0029C990 /* PolygonAPI */,
 				651E4A1D1FC32CDD0029C990 /* Products */,
-				24803A7FD745F8ACF2AAA4F3 /* Pods */,
 				913F56C412D08ADD950DC518 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -118,7 +105,6 @@
 		913F56C412D08ADD950DC518 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A828E69A5AF825914E3ECE9A /* Pods_PolygonAPI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,11 +116,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 651E4A2E1FC32CDD0029C990 /* Build configuration list for PBXNativeTarget "PolygonAPI" */;
 			buildPhases = (
-				AA3225249B8E80639C3C47EE /* [CP] Check Pods Manifest.lock */,
 				651E4A181FC32CDD0029C990 /* Sources */,
 				651E4A191FC32CDD0029C990 /* Frameworks */,
 				651E4A1A1FC32CDD0029C990 /* Resources */,
-				97A0B18D5A0224120B07A43E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +155,9 @@
 				Base,
 			);
 			mainGroup = 651E4A131FC32CDD0029C990;
+			packageReferences = (
+				65FD9AEF300D07D40080215D /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+			);
 			productRefGroup = 651E4A1D1FC32CDD0029C990 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,49 +180,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		97A0B18D5A0224120B07A43E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PolygonAPI/Pods-PolygonAPI-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PolygonAPI/Pods-PolygonAPI-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA3225249B8E80639C3C47EE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PolygonAPI-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		651E4A181FC32CDD0029C990 /* Sources */ = {
@@ -325,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -377,10 +321,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -388,14 +333,16 @@
 		};
 		651E4A2F1FC32CDD0029C990 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFF8D6A2BE1A47718D9B6F46 /* Pods-PolygonAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				INFOPLIST_FILE = PolygonAPI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xattacker.PolygonAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,14 +353,16 @@
 		};
 		651E4A301FC32CDD0029C990 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 733020B5131D1E559A19A41A /* Pods-PolygonAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				INFOPLIST_FILE = PolygonAPI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xattacker.PolygonAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65FD9AEF300D07D40080215D /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65FD9AF0300D07D40080215D /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65FD9AEF300D07D40080215D /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 651E4A141FC32CDD0029C990 /* Project object */;
 }
