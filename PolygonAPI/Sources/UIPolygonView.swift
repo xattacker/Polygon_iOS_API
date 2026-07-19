@@ -9,6 +9,7 @@
 import UIKit
 
 
+@MainActor
 public protocol UIPolygonViewDelegate: AnyObject
 {
     func onRegionClicked(region: PolygonRegion)
@@ -16,6 +17,7 @@ public protocol UIPolygonViewDelegate: AnyObject
 }
 
 
+@MainActor
 @IBDesignable public final class UIPolygonView: UIView
 {
     @IBInspectable public var borderColor: UIColor = UIColor.darkGray
@@ -234,11 +236,6 @@ public protocol UIPolygonViewDelegate: AnyObject
     {
         self.regions.removeAll()
         self.setNeedsDisplay()
-    }
-    
-    deinit
-    {
-        self.regions.removeAll()
     }
 }
 

@@ -1,4 +1,4 @@
-﻿# Polygon_iOS_API
+# Polygon_iOS_API
 an iOS swift Polygon  UI View component 
 <br><br>
 Development Target: iOS 
@@ -15,19 +15,12 @@ The API could load data from code for json file(json parsing by ObjectMapper htt
 
 # Installation
 
-### Cocoapods
-PolygonAPI can be added to your project using CocoaPods 0.36 or later by adding the following line to your Podfile:
-```
-pod 'ObjectMapper'
-pod 'PolygonAPI'
-```
-
 ### Swift Package Manager
 To add PolygonAPI to a [Swift Package Manager](https://swift.org/package-manager/) based project, add:
 
 ```swift
-.package(url: "https://github.com/xattacker/Polygon_iOS_API.git", .upToNextMajor(from: "1.0.3")),
-.package(url: "https://github.com/tristanhimmelman/ObjectMapper.git", .upToNextMajor(from: "4.1.0")),
+.package(url: "https://github.com/xattacker/Polygon_iOS_API.git", .upToNextMajor(from: "1.1.0")),
+.package(url: "https://github.com/tristanhimmelman/ObjectMapper.git", .upToNextMajor(from: "4.3.0")),
 ```
 to your `Package.swift` files `dependencies` array.
 

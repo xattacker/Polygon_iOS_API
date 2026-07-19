@@ -23,24 +23,26 @@ internal extension UIColor
     convenience init(hexString: String)
     {
         let str = hexString.replacingOccurrences(of: "#", with: "")
+        let scanner = Scanner(string: str)
         
-        var int = UInt32()
-        if Scanner(string: str).scanHexInt32(&int)
+        // scanInt32 取出的值 會跟 scanHexInt32(&value) 不一致, 因為前者的範圍值比較小, 所以要用範圍值比較大的 scanInt64
+        if let i64 = scanner.scanInt64(representation: .hexadecimal)
         {
+            let value = UInt32(i64)
             let a, r, g, b: UInt32
             
-            switch str.length
+            switch str.count
             {
                 case 3: // RGB (12-bit)
-                    (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
+                    (a, r, g, b) = (255, (value >> 8) * 17, (value >> 4 & 0xF) * 17, (value & 0xF) * 17)
                     break
                 
                 case 6: // RGB (24-bit)
-                    (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
+                    (a, r, g, b) = (255, value >> 16, value >> 8 & 0xFF, value & 0xFF)
                     break
                 
                 case 8: // ARGB (32-bit)
-                    (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
+                    (a, r, g, b) = (value >> 24, value >> 16 & 0xFF, value >> 8 & 0xFF, value & 0xFF)
                     break
                 
                 default:
@@ -48,7 +50,10 @@ internal extension UIColor
                     break
             }
             
-            self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
+            self.init(red: CGFloat(r) / 255,
+                      green: CGFloat(g) / 255,
+                      blue: CGFloat(b) / 255,
+                      alpha: CGFloat(a) / 255)
         }
         else
         {

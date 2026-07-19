@@ -1,11 +1,11 @@
-// swift-tools-version:5.2
+// swift-tools-version:6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "PolygonAPI",
-    platforms: [.iOS(.v10)],
+    platforms: [.iOS(.v13)],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -24,5 +24,5 @@ let package = Package(
             dependencies: [.product(name: "ObjectMapper", package: "ObjectMapper")],
  	    path: "PolygonAPI/Sources"),
     ],
-    swiftLanguageVersions: [.v5]
+    swiftLanguageVersions: [.v6]
 )
